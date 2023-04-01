@@ -1,0 +1,71 @@
+.work-experience {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px;
+    height: 100%;
+    width: 70%; // set a specific width for the container element
+    margin: auto;
+    
+    &__header {
+      color: rgb(0, 0, 0);
+      font-size: 32px;
+      font-weight: bold;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+  
+    &__content {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: left;
+        overflow-x: scroll !important;
+        width: 100%;
+        height: 100%;
+        margin: 0 -10px;
+        padding-left: 10px;
+        -webkit-overflow-scrolling: touch;
+      }
+      
+  
+    // responsive layout for smaller screens
+    @media only screen and (max-width: 500px) {
+      padding: 20px;
+    width: 100%;
+    height: 100%;
+      &__header {
+        font-size: 24px;
+      }
+  
+      &__content {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: left;
+        overflow-x: scroll !important;
+        width: 100%;
+        height: 100%;
+        margin: 0 -10px;
+        -webkit-overflow-scrolling: touch;
+      }
+    }
+  
+    @media only screen and (max-width: 280px) {
+      padding: 20px;
+  
+      &__header {
+        font-size: 24px;
+      }
+  
+      &__content {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: left;
+        overflow-x: scroll !important;
+        width: 100%;
+        height: 100%;
+        margin: 0 -10px;
+        -webkit-overflow-scrolling: touch;
+      }
+    }
+  }

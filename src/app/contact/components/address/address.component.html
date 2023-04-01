@@ -1,0 +1,12 @@
+<div class="work-component">
+    <div class="organization">
+        <i class={{address.icon}}></i>
+        <h3 *ngIf="address.type === 'linkedIn'">
+            <a href="{{ address.link }}">Raisa Shamma</a>
+        </h3>
+        <h3 *ngIf="address.type !== 'linkedIn'">
+            {{address.link}}
+        </h3>
+    </div>
+</div>
+  

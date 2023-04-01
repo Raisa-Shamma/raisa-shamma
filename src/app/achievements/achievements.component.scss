@@ -1,0 +1,57 @@
+.work-experience {
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+  
+    &__header {
+      color: white;
+      font-size: 32px;
+      font-weight: bold;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+  
+    &__content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+  
+      // width of each work component card
+      $card-width: 400px;
+    }
+  
+    // responsive layout for smaller screens
+    @media only screen and (max-width: 500px) {
+      padding: 20px;
+  
+      &__header {
+        font-size: 24px;
+      }
+  
+      &__content {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+      }
+    }
+  }
+
+  
+  // Add the following styles to hide the scrollbar by default
+  .work-experience__content::-webkit-scrollbar {
+    height: 0;
+    width: 0;
+    background: transparent;
+  }
+  
+  // Add the following styles to show the scrollbar only when needed
+  .work-experience__content::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.5);
+  }
+  
+  .work-experience__content::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  

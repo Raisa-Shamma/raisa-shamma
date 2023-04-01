@@ -1,0 +1,23 @@
+
+
+
+    <div class="work-component">
+        
+        <div class="organization">
+            <h2>{{ skill.name }}</h2>
+            <circle-progress
+            #circleProgress
+            [percent]="skill.percentage"
+            [radius]="80"
+            [outerStrokeWidth]="10"
+            [innerStrokeWidth]="6"
+            [outerStrokeColor]="'red'"
+            [innerStrokeColor]="'#579ad9'"
+            [animation]="true"
+            [animationDuration]="5300"
+        ></circle-progress>
+        
+        </div>
+        
+    </div>
+

@@ -1,0 +1,40 @@
+.introduction {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    
+    &__left {
+      margin-right: 50px;
+      width: 300px;
+      
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+    
+    &__right {
+      text-align: justify;
+      font-size: 18px;
+      line-height: 1.5;
+    }
+    
+    @media only screen and (max-width: 500px) {
+      flex-direction: column;
+      padding: 20px;
+      
+      &__left {
+        margin-right: 0;
+        margin-bottom: 20px;
+        width: 100%;
+        max-width: 300px;
+      }
+      
+      &__right {
+        text-align: center;
+      }
+    }
+  }
+  

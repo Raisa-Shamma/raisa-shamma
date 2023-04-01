@@ -1,0 +1,98 @@
+.work-component {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    text-align: left;
+    background-color: white;
+    width: auto;
+    height: 200px;
+    padding: 20px;
+    margin: 10px;
+    margin-bottom: 1px;
+    border-radius: 10px;
+    box-shadow: 0 12px 34px rgba(0, 0, 0, 0.2);
+    
+    p {
+      font-size: 16px;
+      text-align: left;
+      margin: 0;
+      margin-bottom: 5px;
+    }
+    
+    @media (max-width: 500px) {
+        width: 80%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        
+          p {
+            font-size: 16px;
+            text-align: left;
+            margin: 0;
+            margin-bottom: 5px;
+          }
+    }
+
+    @media (max-width: 375px) {
+        width: auto;
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+          p {
+            font-size: 16px;
+            text-align: left;
+            margin: 0;
+            margin-bottom: 5px;
+          }
+    }
+
+    @media (max-width: 414px) {
+        width: auto;
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+          p {
+            font-size: 16px;
+            text-align: left;
+            margin: 0;
+            margin-bottom: 5px;
+          }
+    }
+
+    @media (max-width: 540px) {
+        width: auto;
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+          p {
+            font-size: 12px;
+            text-align: left;
+            margin: 0;
+            margin-bottom: 5px;
+          }
+    }
+
+    @media (max-width: 280px) {
+        width: auto;
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+          p {
+            font-size: 10px;
+            text-align: left;
+            margin: 0;
+            margin-bottom: 5px;
+          }
+    }
+  }
+  
